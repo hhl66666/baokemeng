@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 390 844" fill="none">
+  <title>杯中伙伴 · 晨光门店幸存者实战概念图</title>
+  <desc>动漫咖啡师小满在暖光微缩咖啡馆中自动攻击风味小怪。木地板、绿色沙发、吧台和咖啡机构成地图。顶部显示生命与战斗时间，底部显示经验、四项技能和移动摇杆。本图为静态视觉提案，不是可玩游戏。</desc>
+  <defs>
+    <linearGradient id="floor" x2="390" y2="740" gradientUnits="userSpaceOnUse"><stop stop-color="#E9CA9C"/><stop offset="1" stop-color="#B88659"/></linearGradient>
+    <linearGradient id="green" x2="80" y2="95" gradientUnits="userSpaceOnUse"><stop stop-color="#5B8E72"/><stop offset="1" stop-color="#244E3D"/></linearGradient>
+    <linearGradient id="hair" x2="0" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#A46F48"/><stop offset="1" stop-color="#55382E"/></linearGradient>
+    <linearGradient id="steel" x2="65" y2="65" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F4DC"/><stop offset=".5" stop-color="#A2B5A5"/><stop offset="1" stop-color="#D9DEC7"/></linearGradient>
+    <pattern id="boards" width="52" height="112" patternUnits="userSpaceOnUse" patternTransform="rotate(-16)">
+      <path d="M0 0v112M52 0v112M0 35h52" stroke="#835C3E" stroke-opacity=".22"/>
+      <path d="M8 0v112m27-90c-8 25 7 42 0 65" stroke="#F9E4BD" stroke-opacity=".2"/>
+    </pattern>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="190%"><feDropShadow dx="2" dy="6" stdDeviation="4" flood-color="#3D3528" flood-opacity=".23"/></filter>
+    <symbol id="bean" viewBox="-18 -22 36 44">
+      <ellipse cy="15" rx="14" ry="5" fill="#59412C" opacity=".2"/>
+      <path d="M-13 6C-22-9-5-26 8-16c17 10 5 39-10 33-5-2-8-6-11-11Z" fill="#825034" stroke="#503A2A" stroke-width="1.5"/>
+      <path d="M4-12C-9-5 5 1-4 12" stroke="#CA9A60" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="m-11 0 4 2m12 1 4-2" stroke="#F3D9A6" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="sugar" viewBox="-18 -22 36 44">
+      <ellipse cy="15" rx="15" ry="5" fill="#59412C" opacity=".2"/>
+      <path d="m-15-6 10-13 18 5 4 22-18 12-15-13 1-13Z" fill="#E5B866" stroke="#AE763C" stroke-width="1.5"/>
+      <path d="m-5-19 4 18 18 9M-1-1-16 7m15-8L13-14" stroke="#FFE4A1" stroke-width="1.3"/>
+      <path d="m-9 4 3 1m11-3 3-2" stroke="#725132" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="hero" viewBox="0 0 96 128">
+      <ellipse cx="46" cy="116" rx="33" ry="9" fill="#304B36" opacity=".25"/>
+      <path d="m32 95-5 17 15 1 3-17m9-1 3 18 15-1-6-18" fill="#76523A" stroke="#523C2B" stroke-width="1.5"/>
+      <path d="m27 111-5 7h20v-6m15 1v5h20l-7-8" fill="#AE7B4B" stroke="#523C2B" stroke-width="1.5"/>
+      <path d="M30 64 16 81l9 8 9-10m29-15 17 16-9 9-9-9" fill="#FAECD2" stroke="#9D8160" stroke-width="1.5"/>
+      <path d="M32 64h30l8 34c-16 8-32 8-47 0l9-34Z" fill="url(#green)" stroke="#224B37" stroke-width="1.5"/>
+      <path d="m36 63-2 9m25-9 3 9" stroke="#173E30" stroke-width="4"/>
+      <path d="M35 83h21v12H35Z" fill="#3C7959" stroke="#A3BA91"/>
+      <path d="M23 27c0-25 43-31 50-4l-2 28H23V27Z" fill="url(#hair)" stroke="#53372C" stroke-width="1.5"/>
+      <ellipse cx="47" cy="42" rx="24" ry="25" fill="#F6D3AF" stroke="#B1805D" stroke-width="1.3"/>
+      <path d="M20 33C16 14 29 5 38 8c0-9 17-11 24-3 13-1 25 14 18 30l-9-12-7 11-7-16-9 17 1-14-12 15 1-12-11 16-7-7Z" fill="url(#hair)" stroke="#53372C" stroke-width="1.5"/>
+      <path d="M44 9q13-9 18-2L51 25l1-12-10 9 2-13Z" fill="#F9EBCB"/>
+      <ellipse cx="37" cy="44" rx="3.5" ry="5" fill="#62432F"/><ellipse cx="57" cy="44" rx="3.5" ry="5" fill="#62432F"/>
+      <circle cx="36" cy="42" r="1.3" fill="#FFFBE5"/><circle cx="56" cy="42" r="1.3" fill="#FFFBE5"/>
+      <path d="M43 55q5 5 10-1" stroke="#A2664B" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="m28 50 5 1m30-1 4-1" stroke="#DB9B82" stroke-width="3" stroke-linecap="round"/>
+      <path d="m69 31 7-2" stroke="#E1B45F" stroke-width="3" stroke-linecap="round"/>
+      <path d="M75 77c19-4 23 14 9 18" stroke="#8DAD98" stroke-width="5"/>
+      <path d="m63 73 23 2-3 29c-6 7-17 5-19-1l-1-30Z" fill="url(#steel)" stroke="#577B63" stroke-width="1.5"/>
+      <ellipse cx="74" cy="74" rx="12" ry="4" fill="#FFFAE3" stroke="#577B63"/>
+      <circle cx="69" cy="82" r="5" fill="#F6D3AF" stroke="#B1805D"/>
+    </symbol>
+    <clipPath id="screen"><rect width="390" height="844" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#screen)" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <rect width="390" height="844" fill="#D9DCC7"/>
+    <!-- A dollhouse interior rather than a tabletop arena. -->
+    <path d="M-35 200 313 98l113 531L29 748-35 200Z" fill="url(#floor)"/>
+    <path d="M-35 200 313 98l113 531L29 748-35 200Z" fill="url(#boards)"/>
+    <path d="m-26 223 335-98-7-90L-26 133v90Z" fill="#F4EBD5"/>
+    <path d="m-26 223 335-98" stroke="#8B9F7D" stroke-width="8"/>
+    <path d="m309 125 96 366 25-8-96-375-25 17Z" fill="#E0D9C0"/>
+    <path d="m5 174 8 107 99 68 78-22-92-150-93-3Z" fill="#FFF4C7" opacity=".18"/>
+    <!-- Window -->
+    <g transform="translate(7 159) skewY(-16)">
+      <rect width="99" height="76" rx="5" fill="#8BA68E" stroke="#617C60" stroke-width="4"/>
+      <rect x="7" y="7" width="85" height="62" fill="#F7E5AC"/>
+      <path d="M50 7v62M7 39h85" stroke="#FFFAE2" stroke-width="4"/>
+      <path d="M13 60q15-26 30 0m14-5q15-24 29-1" stroke="#ADC49A" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <!-- Counter, machine, shelves -->
+    <g filter="url(#shadow)">
+      <path d="m153 194 147-40 21 78-147 43-21-81Z" fill="#896245" stroke="#66523A" stroke-width="1.5"/>
+      <path d="m174 249 147-42v38l-147 43v-39Z" fill="#E7DDC1"/>
+      <path d="m174 249-21-55v39l21 55v-39Z" fill="#AC9778"/>
+      <path d="m151 189 148-42 23 57-148 45-23-60Z" fill="#F8F1D9" stroke="#C1BCA2" stroke-width="2"/>
+      <path d="m235 155 43-12 13 40-43 13-13-41Z" fill="url(#steel)" stroke="#5B7868" stroke-width="1.5"/>
+      <path d="m241 159 32-9 5 15-32 9-5-15Z" fill="#254F3F"/>
+      <circle cx="251" cy="162" r="3" fill="#D3C181"/>
+      <path d="m250 179 28-8m-19 8 2 10m10-14 3 10" stroke="#577765" stroke-width="3"/>
+      <path d="m186 184 18-5 3 13-18 6-3-14Z" fill="#235C42"/>
+      <ellipse cx="194" cy="181" rx="10" ry="4" transform="rotate(-16 194 181)" fill="#FFF9E5"/>
+      <path d="m163 153 38-11v-36l-38 10v37Z" fill="#345C46" stroke="#E4D7B3" stroke-width="3"/>
+      <path d="m171 124 23-6m-21 14 16-5m-14 12 20-6" stroke="#DEDDBE" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <!-- Green sofa in the left lounge -->
+    <g transform="translate(5 345) rotate(-16)" filter="url(#shadow)">
+      <rect x="6" y="47" width="78" height="46" rx="9" fill="#234F3A"/>
+      <rect x="2" y="9" width="87" height="53" rx="12" fill="url(#green)" stroke="#365E43" stroke-width="2"/>
+      <rect x="10" y="39" width="33" height="37" rx="8" fill="#6F9A78" stroke="#42694B"/>
+      <rect x="46" y="39" width="33" height="37" rx="8" fill="#6F9A78" stroke="#42694B"/>
+      <rect x="-3" y="30" width="15" height="47" rx="7" fill="#3C7052"/>
+      <rect x="78" y="30" width="15" height="47" rx="7" fill="#3C7052"/>
+      <path d="M12 88v9m62-9v9" stroke="#6E523A" stroke-width="5"/>
+      <rect x="18" y="18" width="21" height="22" rx="5" transform="rotate(-10 18 18)" fill="#E3D7AE"/>
+    </g>
+    <!-- Round table and plant -->
+    <g filter="url(#shadow)">
+      <path d="m112 453 5 39m-20-20 1 23m35-28 4 20" stroke="#795439" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="114" cy="457" rx="32" ry="21" fill="#AE7B4F"/>
+      <ellipse cx="114" cy="451" rx="32" ry="21" fill="#E3BE86" stroke="#AA8054" stroke-width="1.5"/>
+      <ellipse cx="112" cy="450" rx="10" ry="6" fill="#FFF2D6"/>
+      <path d="M107 441v8c0 6 11 6 11 0v-8" fill="#FFF7E4"/>
+      <ellipse cx="112.5" cy="441" rx="5.5" ry="3" fill="#8F6242"/>
+      <path d="m332 305 5 30c6 7 22 5 26-3l1-27" fill="#D9BA89" stroke="#9B8059"/>
+      <ellipse cx="348" cy="304" rx="17" ry="8" fill="#6C7050"/>
+      <path d="M349 308v-43m-1 26c-28-1-25-27-7-17m9 2c18-29 31-4 1 10m-3 13c-22-6-25 9-5 9" fill="#4B8058" stroke="#356B47" stroke-width="2"/>
+    </g>
+    <!-- Combat lane -->
+    <ellipse cx="229" cy="460" rx="55" ry="31" fill="#E9F9CA" opacity=".16"/>
+    <path d="M230 470c55-3 91-50 67-85" stroke="#D4F0C0" stroke-width="20" stroke-linecap="round" opacity=".32"/>
+    <path d="M239 464c43-6 72-40 55-70" stroke="#FFF9D6" stroke-width="8" stroke-linecap="round"/>
+    <g fill="#FBFFE5" fill-opacity=".4" stroke="#F8FFDA" stroke-width="1.5">
+      <circle cx="276" cy="443" r="10"/><circle cx="296" cy="418" r="15"/><circle cx="289" cy="391" r="9"/>
+    </g>
+    <path d="m293 436 9-6m-5 17 12 1m-15 6 7 8" stroke="#FFF3BA" stroke-width="2.5" stroke-linecap="round"/>
+    <use href="#bean" x="274" y="423" width="31" height="38"/>
+    <use href="#bean" x="308" y="374" width="29" height="36"/>
+    <use href="#bean" x="246" y="335" width="26" height="32"/>
+    <use href="#bean" x="165" y="352" width="26" height="32"/>
+    <use href="#bean" x="144" y="523" width="32" height="39"/>
+    <use href="#bean" x="276" y="555" width="29" height="36"/>
+    <use href="#bean" x="332" y="504" width="26" height="32"/>
+    <use href="#sugar" x="198" y="293" width="28" height="34"/>
+    <use href="#sugar" x="312" y="466" width="31" height="38"/>
+    <path d="m326 505-30 39 13-1-1 13 30-42" fill="#B9673C" fill-opacity=".15" stroke="#D6A36B" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <g fill="#FAE5A0" stroke="#B48E45" stroke-width="1">
+      <path d="m185 480 4-6 4 6-4 6-4-6Zm61 30 4-6 4 6-4 6-4-6Zm13-133 4-6 4 6-4 6-4-6Zm-48 175 4-6 4 6-4 6-4-6Z"/>
+    </g>
+    <use href="#hero" x="190" y="386" width="78" height="104" filter="url(#shadow)"/>
+    <path d="m217 390 5 5 5-5" fill="#EED08A" stroke="#FFF5D5" stroke-width="1.5"/>
+    <g fill="#FFF5CE" stroke="#725331" stroke-width=".6" paint-order="stroke" font-size="15" font-weight="900">
+      <text x="286" y="420">128</text><text x="306" y="370" font-size="11">64</text>
+    </g>
+    <g transform="translate(132 575)">
+      <path d="M0 8c-5-12 7-26 17-21 11-12 27-1 24 11 16 17-11 33-23 23C9 28-2 18 0 8Z" fill="#E9E0C3" stroke="#C0AB84" stroke-width="1.5"/>
+      <path d="m9 3 5 2m11-1 5-2" stroke="#886C46" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- HUD -->
+    <rect x="12" y="15" width="366" height="72" rx="20" fill="#173F32" filter="url(#shadow)"/>
+    <text x="27" y="37" fill="#B7CBB1" font-size="9" letter-spacing="1.3">杯中伙伴 / CHAPTER 01</text>
+    <text x="27" y="61" fill="#FFF7E1" font-size="19" font-weight="800">晨光门店</text>
+    <text x="257" y="43" fill="#FFF1CC" text-anchor="middle" font-size="22" font-weight="800">02:36</text>
+    <text x="257" y="62" fill="#BDD0B5" text-anchor="middle" font-size="8">战斗进行中</text>
+    <rect x="327" y="29" width="36" height="39" rx="12" fill="#EEECD6"/>
+    <path d="M340 42v13m7-13v13" stroke="#28563E" stroke-width="3" stroke-linecap="round"/>
+    <rect x="27" y="71" width="160" height="5" rx="2.5" fill="#41614A"/>
+    <rect x="27" y="71" width="120" height="5" rx="2.5" fill="#A2C57B"/>
+    <text x="197" y="76" fill="#DBE8C8" font-size="7">HP 75 / 100</text>
+    <rect x="14" y="98" width="170" height="31" rx="12" fill="#FFFAE8" filter="url(#shadow)"/>
+    <circle cx="29" cy="113.5" r="4" fill="#BD8145"/>
+    <text x="40" y="117" fill="#5A6749" font-size="9" font-weight="600">首领登场 · 05:00</text>
+    <rect x="142" y="109" width="28" height="7" rx="3.5" fill="#E5DEC5"/>
+    <rect x="142" y="109" width="15" height="7" rx="3.5" fill="#BD9757"/>
+    <rect x="275" y="98" width="101" height="31" rx="12" fill="#FFFAE8"/>
+    <text x="325" y="118" text-anchor="middle" fill="#486347" font-size="10" font-weight="700">击败 186</text>
+    <!-- Single-thumb controls -->
+    <circle cx="76" cy="643" r="46" fill="#244D38" fill-opacity=".17" stroke="#FFF3D2" stroke-opacity=".65" stroke-width="1.5"/>
+    <circle cx="76" cy="643" r="31" stroke="#FFF3D2" stroke-opacity=".4" stroke-dasharray="2 5"/>
+    <circle cx="82" cy="633" r="21" fill="#FFF6DB" fill-opacity=".85" stroke="#D5D6B8" filter="url(#shadow)"/>
+    <path d="m77 633 5-5 5 5m-5-5v12" stroke="#4F7450" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="705" text-anchor="middle" fill="#36583C" font-size="9" font-weight="600">拖动走位</text>
+    <rect x="252" y="649" width="124" height="38" rx="13" fill="#FFF6DC" fill-opacity=".94"/>
+    <circle cx="267" cy="668" r="3.5" fill="#3A7653"/>
+    <text x="278" y="666" fill="#355B3F" font-size="9" font-weight="700">自动攻击中</text>
+    <text x="278" y="678" fill="#85816A" font-size="7">拾取灵感，升级构筑</text>
+    <!-- Skill loadout, not a follower party -->
+    <rect x="0" y="724" width="390" height="120" rx="23" fill="#173F32"/>
+    <text x="18" y="745" fill="#FBF0D2" font-size="11" font-weight="800">Lv. 8</text>
+    <text x="372" y="745" text-anchor="end" fill="#BCD0AE" font-size="8">灵感 68 / 100 · 升级三选一</text>
+    <rect x="18" y="753" width="354" height="5" rx="2.5" fill="#3F6248"/>
+    <rect x="18" y="753" width="241" height="5" rx="2.5" fill="#D8BD75"/>
+    <g fill="#F5EED8">
+      <rect x="18" y="769" width="82" height="49" rx="12"/>
+      <rect x="108" y="769" width="82" height="49" rx="12"/>
+      <rect x="198" y="769" width="82" height="49" rx="12"/>
+    </g>
+    <rect x="288" y="769" width="84" height="49" rx="12" fill="#2A5540" stroke="#608365" stroke-dasharray="3 3"/>
+    <circle cx="35" cy="788" r="8" fill="#FFFBEB" stroke="#91B692" stroke-width="1.5"/>
+    <circle cx="39" cy="784" r="3" fill="#D7EAC8"/>
+    <path d="m125 779 7 9-7 9-7-9 7-9Z" fill="#86BFA5" stroke="#528A74"/>
+    <path d="m212 793 12-11m-12 5 12 5" stroke="#B1894F" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#36583C" font-size="8" font-weight="700">
+      <text x="48" y="787">奶泡弧弹</text><text x="138" y="787">冰晶环</text><text x="228" y="787">浓缩射线</text>
+    </g>
+    <g fill="#879073" font-size="7"><text x="48" y="800">Lv. 3</text><text x="138" y="800">Lv. 2</text><text x="228" y="800">Lv. 1</text></g>
+    <g fill="#CCD5B8"><rect x="28" y="808" width="62" height="3" rx="1.5"/><rect x="118" y="808" width="62" height="3" rx="1.5"/><rect x="208" y="808" width="62" height="3" rx="1.5"/></g>
+    <g fill="#4A8057"><rect x="28" y="808" width="45" height="3" rx="1.5"/><rect x="118" y="808" width="22" height="3" rx="1.5"/><rect x="208" y="808" width="53" height="3" rx="1.5"/></g>
+    <path d="M309 788h10m-5-5v10" stroke="#ABC298" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="329" y="789" fill="#BDD0AC" font-size="8">技能空位</text>
+    <text x="330" y="802" fill="#87A781" font-size="7">升级解锁</text>
+    <text x="18" y="833" fill="#ADC49E" font-size="7">辅助：冷却缩减 Lv. 1</text>
+    <text x="372" y="833" text-anchor="end" fill="#8EAB87" font-size="6">原创概念 · 非官方联名 · 静态画面</text>
+  </g>
+</svg>

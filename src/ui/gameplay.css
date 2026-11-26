@@ -1,0 +1,297 @@
+.dock {
+  left: 50%;
+  right: auto;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px #1a332e24;
+  transform: translateX(-50%);
+}
+
+.skills {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  gap: 5px;
+}
+
+.skill {
+  width: 50px;
+  flex: none;
+  padding: 2px;
+}
+
+@media (max-width: 600px) {
+  .dock {
+    left: auto;
+    right: max(10px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    max-width: calc(100vw - 112px);
+    padding: 4px 5px;
+    border-radius: 10px;
+    background: #173f32bf;
+    box-shadow: 0 4px 14px #1a332e20;
+    transform: none;
+  }
+
+  .experience {
+    gap: 8px;
+    font-size: 9px;
+  }
+
+  .experience span {
+    font-size: 7px;
+  }
+
+  .xp {
+    height: 2px;
+    margin: 3px 0 4px;
+  }
+
+  .skills {
+    gap: 2px;
+  }
+
+  .skill {
+    width: 31px;
+    gap: 1px;
+    padding: 1px;
+  }
+
+  .skill-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+
+  .skill-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .skill-icon > small {
+    top: 1px;
+    right: 1px;
+    min-width: 10px;
+    height: 10px;
+    font-size: 6px;
+    line-height: 10px;
+  }
+
+  .skill-name,
+  .skill.empty span {
+    display: none;
+  }
+
+  .dock-note {
+    display: none;
+  }
+}
+
+.gameplay-hud {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  color: #253f34;
+  pointer-events: none;
+}
+
+.gameplay-hud .hud {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  left: 12px;
+  right: 12px;
+  width: min(calc(100% - 24px), 1100px);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(205px, 0.9fr) minmax(270px, 1.3fr) auto;
+  align-items: start;
+  gap: 10px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.player-card,
+.run-card,
+.hud-actions {
+  min-height: 60px;
+  border: 1px solid #fff9;
+  border-radius: 15px;
+  background: #fffaf0ed;
+  box-shadow: 0 5px 16px #153d3025;
+}
+
+.player-card {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1px 9px;
+  padding: 8px 11px;
+}
+
+.character-emblem {
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  align-self: center;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #c96e59;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900;
+  box-shadow: 0 0 0 2px #dca06d;
+}
+
+.player-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1.15;
+}
+
+.player-copy > small {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  color: #74826d;
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player-copy > b { overflow: hidden; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+.player-level { color: #8e7554; font-size: 9px; font-weight: 800; }
+.gameplay-hud .health { grid-column: 2; display: grid; gap: 3px; color: #64755f; font-size: 8px; }
+.health-line { display: flex; align-items: center; justify-content: space-between; }
+.health-line b { min-width: 0; color: #3b4e3e; font-size: 8px; font-variant-numeric: tabular-nums; }
+.gameplay-hud .track { height: 5px; border-radius: 8px; background: #d9ddc9; }
+.gameplay-hud .track i { background: #8cbe74; }
+
+.run-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 7px 13px;
+}
+
+.map-info { display: grid; min-width: 0; gap: 2px; }
+.map-info > small { color: #77846f; font-size: 8px; }
+.map-info > b { max-width: 150px; overflow: hidden; color: #324b37; font-size: 14px; text-overflow: ellipsis; white-space: nowrap; }
+.gameplay-hud .clock { min-width: 84px; text-align: right; }
+.gameplay-hud .clock strong { display: block; color: #273d37; font-size: 21px; line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.gameplay-hud .clock span { display: block; margin-top: 3px; color: #7a8771; font-size: 8px; white-space: nowrap; }
+
+.hud-actions { display: flex; align-items: center; gap: 6px; padding: 7px; }
+.kill-count { display: flex; align-items: center; gap: 4px; padding: 0 5px; color: #66765e; font-size: 11px; }
+.kill-count b { color: #31493b; font-variant-numeric: tabular-nums; }
+.gameplay-hud .icon { display: grid; place-items: center; width: 42px; height: 42px; padding: 0; border-radius: 11px; background: #214d3d; color: #fff8df; pointer-events: auto; }
+
+.gameplay-hud .status { position: absolute; top: 82px; left: max(14px, env(safe-area-inset-left)); right: auto; max-width: none; margin: 0; font-size: 9px; }
+.gameplay-hud .status > span { padding: 6px 10px; border: 1px solid #ffffffa6; border-radius: 10px; background: #fff9edeb; color: #586b4f; box-shadow: 0 3px 12px #183e3218; }
+.gameplay-hud #boss-bar { position: absolute; top: 82px; left: 50%; right: auto; width: min(220px, 40vw); transform: translateX(-50%); color: #654a39; font-size: 9px; text-align: center; }
+.gameplay-hud #boss-bar .track { height: 5px; margin-top: 4px; background: #654a3940; }
+.gameplay-hud #boss-hp { background: #bd6750; }
+
+.gameplay-hud .dock { position: absolute; left: 50%; right: auto; bottom: max(13px, env(safe-area-inset-bottom)); width: min(300px, 34vw); max-width: 300px; margin: 0; padding: 0; transform: translateX(-50%); border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.gameplay-hud .experience { display: flex; align-items: center; justify-content: space-between; color: #fff8e6; font-size: 11px; text-shadow: 0 1px 4px #153329a6; }
+.gameplay-hud .experience span { color: #e5e9d5; font-size: 9px; }
+.gameplay-hud .xp { height: 6px; margin: 5px 0 0; border: 1px solid #fff9; background: #ffffff65; }
+.gameplay-hud .xp i { background: #9cd77b; }
+
+.gameplay-hud .skill-rail { position: absolute; right: max(15px, env(safe-area-inset-right)); bottom: max(70px, calc(env(safe-area-inset-bottom) + 54px)); display: grid; grid-template-columns: 1fr; gap: 7px; width: 144px; }
+.gameplay-hud .skill { position: relative; display: grid; grid-template-columns: 36px minmax(0, 1fr); align-items: center; gap: 7px; width: 100%; height: 43px; min-height: 0; padding: 4px 7px; overflow: hidden; border: 1px solid #fff9; border-radius: 12px; background: #fffaf0ed; color: #354b3c; box-shadow: 0 3px 12px #173a3020; }
+.gameplay-hud .skill-icon { position: relative; display: grid; place-items: center; width: 34px; height: 34px; overflow: hidden; border: 1px solid #fff; border-radius: 9px; background: #d47d58; color: #fff; }
+.gameplay-hud .skill-icon.foam { background: #db805a; }
+.gameplay-hud .skill-icon.ice { background: #5babc2; }
+.gameplay-hud .skill-icon.espresso { background: #ad7956; }
+.gameplay-hud .skill-icon.caramel { background: #bf8b3d; }
+.gameplay-hud .skill-icon.matcha { background: #548d68; }
+.gameplay-hud .skill-icon.cocoa { background: #a37184; }
+.gameplay-hud .skill-icon.storm { background: #5599b7; }
+.gameplay-hud .skill-icon.blossom { background: #c96e91; }
+.gameplay-hud .skill-icon.roast { background: #ca6847; }
+.gameplay-hud .skill-icon > svg,
+.gameplay-hud .skill-icon > small { position: relative; z-index: 1; }
+.gameplay-hud .skill-icon > small { position: absolute; top: 1px; right: 1px; min-width: 12px; height: 12px; border-radius: 7px; background: #1e382dcc; color: #fff; font-size: 7px; line-height: 12px; text-align: center; }
+.gameplay-hud .skill-shade { position: absolute; inset: 0; z-index: 2; transform-origin: top; background: #162820c9; transition: transform .12s linear; }
+.gameplay-hud .skill-copy { display: grid; min-width: 0; gap: 3px; }
+.gameplay-hud .skill-copy > b { overflow: hidden; color: #354b3c; font-size: 9px; line-height: 1.1; text-overflow: ellipsis; white-space: nowrap; }
+.gameplay-hud .skill-copy > span { color: #78856e; font-size: 7px; }
+.gameplay-hud .cooldown { position: absolute; bottom: 0; left: 0; height: 2px; background: #8fc477; transition: width .12s linear; }
+.gameplay-hud .skill.evolved { border-color: #e4c078; }
+.gameplay-hud .skill.empty { border: 1px dashed #eff4dcaa; background: #173f3285; box-shadow: none; }
+.gameplay-hud .skill.empty .skill-icon { border: 1px dashed #fff9; background: #ffffff18; color: #f5f2d9; }
+.gameplay-hud .skill.empty .skill-copy > b { color: #f5f2d9; }
+.gameplay-hud .skill.empty .skill-copy > span { color: #c1ceaf; }
+
+.gameplay-hud #joystick { position: absolute; left: max(18px, env(safe-area-inset-left)); bottom: max(18px, env(safe-area-inset-bottom)); width: 128px; height: 128px; border: 0; border-radius: 50%; background: transparent; touch-action: none; user-select: none; pointer-events: auto; }
+.gameplay-hud #joystick::before { content: ''; position: absolute; inset: 10px; border: 1px solid #fff9; border-radius: 50%; background: #fffaf02b; pointer-events: none; }
+.gameplay-hud #stick { position: absolute; left: 42px; top: 42px; width: 44px; height: 44px; border: 1px solid #fff; border-radius: 50%; background: #f8f2d9bb; box-shadow: 0 4px 14px #142b2540; pointer-events: none; }
+.gameplay-hud #joystick > span { position: absolute; top: calc(100% + 5px); width: 100%; color: #fff8e8; font-size: 8px; text-align: center; text-shadow: 0 1px 4px #16392d; pointer-events: none; }
+.gameplay-hud #notice { pointer-events: auto; }
+
+@media (max-width: 700px) {
+  .gameplay-hud .hud { top: max(8px, env(safe-area-inset-top)); left: 8px; right: 8px; width: auto; grid-template-columns: minmax(94px, .9fr) minmax(112px, 1.15fr) auto; gap: 5px; }
+  .player-card, .run-card, .hud-actions { min-height: 52px; border-radius: 12px; }
+  .player-card { grid-template-columns: 30px minmax(0, 1fr); gap: 1px 6px; padding: 6px; }
+  .character-emblem { width: 29px; height: 29px; font-size: 13px; }
+  .player-copy > small { font-size: 6px; }
+  .player-copy > b { font-size: 10px; }
+  .player-level, .health-line, .health-line b { font-size: 7px; }
+  .gameplay-hud .health { gap: 2px; }
+  .gameplay-hud .track { height: 4px; }
+  .run-card { gap: 5px; padding: 6px 7px; }
+  .map-info > small { display: none; }
+  .map-info > b { max-width: 75px; font-size: 10px; }
+  .gameplay-hud .clock { min-width: 56px; }
+  .gameplay-hud .clock strong { font-size: 15px; }
+  .gameplay-hud .clock span { max-width: 70px; overflow: hidden; font-size: 6px; text-overflow: ellipsis; }
+  .hud-actions { gap: 2px; padding: 5px; }
+  .kill-count { gap: 2px; padding: 0 2px; }
+  .kill-count svg { width: 12px; height: 12px; }
+  .kill-count b { font-size: 9px; }
+  .gameplay-hud .icon { width: 32px; height: 32px; border-radius: 9px; }
+  .gameplay-hud .icon svg { width: 17px; height: 17px; }
+  .gameplay-hud .status { top: 68px; left: max(9px, env(safe-area-inset-left)); font-size: 7px; }
+  .gameplay-hud .status > span { padding: 5px 7px; border-radius: 8px; }
+  .gameplay-hud #boss-bar { top: 69px; width: 120px; font-size: 7px; }
+  .gameplay-hud .dock { bottom: max(12px, env(safe-area-inset-bottom)); width: min(150px, 38vw); }
+  .gameplay-hud .experience { font-size: 9px; }
+  .gameplay-hud .experience span { font-size: 7px; }
+  .gameplay-hud .xp { height: 5px; margin-top: 3px; }
+  .gameplay-hud .skill-rail { right: max(9px, env(safe-area-inset-right)); bottom: max(62px, calc(env(safe-area-inset-bottom) + 48px)); width: auto; grid-template-columns: repeat(2, 38px); gap: 5px; }
+  .gameplay-hud .skill { display: block; width: 38px; height: 38px; padding: 0; overflow: visible; border: 0; border-radius: 9px; background: transparent; box-shadow: none; }
+  .gameplay-hud .skill-icon { width: 38px; height: 38px; border-radius: 10px; box-shadow: 0 2px 6px #173a3040; }
+  .gameplay-hud .skill-icon svg { width: 18px; height: 18px; }
+  .gameplay-hud .skill-copy { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .gameplay-hud .skill.empty { border: 0; background: transparent; }
+  .gameplay-hud .skill.empty .skill-icon { border: 1px dashed #fff; background: #fffaf04d; }
+  .gameplay-hud .cooldown { bottom: -2px; height: 2px; border-radius: 3px; background: #d8e6bd; }
+  #app .gameplay-hud #joystick { left: max(8px, env(safe-area-inset-left)); bottom: max(8px, env(safe-area-inset-bottom)); width: 128px; height: 128px; }
+  #app .gameplay-hud #joystick::before { inset: 10px; }
+  #app .gameplay-hud #stick { left: 42px; top: 42px; width: 44px; height: 44px; }
+  .gameplay-hud #joystick > span { display: none; }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .gameplay-hud .skill-rail { right: max(10px, env(safe-area-inset-right)); bottom: max(50px, calc(env(safe-area-inset-bottom) + 40px)); grid-template-columns: 1fr; width: 122px; gap: 4px; }
+  .gameplay-hud .skill { display: grid; grid-template-columns: 29px minmax(0, 1fr); width: 122px; height: 34px; padding: 2px 5px; overflow: hidden; border: 1px solid #fff9; border-radius: 9px; background: #fffaf0ed; }
+  .gameplay-hud .skill-icon { width: 28px; height: 28px; border-radius: 7px; }
+  .gameplay-hud .skill-copy { position: static; width: auto; height: auto; overflow: hidden; clip-path: none; white-space: normal; }
+  .gameplay-hud .skill-copy > b { color: #354b3c; font-size: 8px; }
+  .gameplay-hud .skill-copy > span { font-size: 6px; }
+  .gameplay-hud .skill.empty { border: 1px dashed #eff4dcaa; background: #173f3285; }
+  #app .gameplay-hud #joystick { width: 110px; height: 110px; }
+  #app .gameplay-hud #joystick::before { inset: 8px; }
+  #app .gameplay-hud #stick { left: 34px; top: 34px; width: 42px; height: 42px; }
+}
